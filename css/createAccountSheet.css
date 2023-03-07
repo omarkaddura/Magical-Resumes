@@ -1,0 +1,116 @@
+body{
+    background-color: #121212;
+}
+
+.main_container{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+
+/* ------- Styling for login credentials and create an account link ------*/
+/* Remove the extra styling and center the objects*/
+ul.login_objects{
+    list-style: none;
+    padding: 0%;
+    color: #ffffff;
+}
+
+.login_info{ /* div that holds the info in the colored box */
+    background-color: #16324B;
+    margin-left: 35%;
+    margin-right: 35%;
+    text-align: center;
+    border-radius: 25px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.inputs {
+    position: relative;
+    width: 100%;
+    margin: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    border: none;
+    background-color: #12283b;
+    color: white;
+    text-indent: 10px;
+}
+
+/*------ Login Button Properties ------*/
+#login_button{
+    margin-bottom: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 25px;
+    background-color: #36404b;
+    color: #ffffff;
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-bottom: 50px;
+    vertical-align: center;
+}
+
+#login_button:hover{
+background-color: #0078f0;
+}  
+
+#login_button:active{
+    transition: none;
+    background-color: #00468c;
+}
+/*------ end of button logic -------*/
+
+#username_input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: x-large;
+}
+#password_input{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: x-large;
+}
+
+#email_input{
+    margin-top: 8%;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: x-large;
+}
+
+#confirm_password_input{
+    margin-bottom: 8%;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: x-large;
+}
+
+#login_title{
+    font-size: 300%;
+    padding-bottom: px;
+    font-weight: bold;
+    background-color: #0078f0;
+}
+
+#create_an_account_link:link {
+    color: rgb(135, 85, 192);
+}
+#create_an_account_link:visited {
+    color: rgb(238, 60, 60);
+}
