@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Welcome to Magic Resumes</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		
+		<section>
+
+            {% block content %}
+            {% if user.is_authenticated %}
+                Hi {{user.username}}!
+               <p><a href="{%url 'logout'%}"> Log out</a></p> 
+
+            {% else %}
+             <p> You are not logged in</p>
+             <a href="{%url 'login' %}"> Log in </a>
+
+             <a href="{% url 'register' %}"> Register </a>
+            {%endif%}
+            {% endblock %}
+
+        </section>
+        
+	</main>
+	
+	<footer>
+		<p>Copyright © 2023 My Website</p>
+	</footer>
+</body>
+</html>
